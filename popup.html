@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>回关助手</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <span class="logo" aria-hidden="true">
+        <i class="antenna"></i>
+        <span class="face"><i></i><i></i><b></b></span>
+      </span>
+      <div>
+        <h1>回关助手</h1>
+        <span>For X · 数据仅存本机</span>
+      </div>
+    </header>
+    <div class="status-card">
+      <i aria-hidden="true"></i>
+      <p id="status">正在检查当前页面…</p>
+    </div>
+    <div class="legend" aria-label="颜色说明">
+      <span><i class="red"></i>未回关</span>
+      <span><i class="green"></i>互关</span>
+      <span><i class="gold"></i>白名单</span>
+    </div>
+    <p class="hint">打开你的“正在关注”页面，右侧面板会自动出现。</p>
+    <footer>只读取页面信息 · 不会自动关注或取关</footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

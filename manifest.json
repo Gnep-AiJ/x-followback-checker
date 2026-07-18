@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "X 回关助手",
+  "version": "1.2.0",
+  "description": "扫描 X 关注列表，清晰标记互关、未回关和白名单账号。数据仅保存在本机。",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://x.com/*"],
+  "action": {
+    "default_title": "X 回关检查器",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["core.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
